@@ -1,3 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: rgb(2, 107, 2);
+  color: white;
+  padding: 10px 0;
+}
+
+#task-input {
+  padding: 15px;
+  text-align: center;
+}
+
+#text-task {
+  height: 10vw;
+}
+
+#add-task-button {
+  height: 10vw;
+  padding: 0 4vw;
+  font-weight: 900;
+  background-color: rgb(2, 107, 2);
+  color: white;
+}
+
 #lista-tarefas li {
   background-color: white;
 }

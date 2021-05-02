@@ -26,15 +26,15 @@ function checkOnCompleted(event) {
 const taskList = document.querySelector('#lista-tarefas');
 function addTask() {
   const element = document.createElement('li');
-  element.innerText = document.querySelector('#texto-tarefa').value;
+  element.innerText = document.querySelector('#text-task').value;
   taskList.appendChild(element);
-  document.querySelector('#texto-tarefa').value = '';
+  document.querySelector('#text-task').value = '';
   for (let index = 0; index < document.querySelectorAll('li').length; index += 1) {
     document.querySelectorAll('li')[index].addEventListener('click', changeBgcOfTask);
     document.querySelectorAll('li')[index].addEventListener('dblclick', checkOnCompleted);
   }
 }
-document.querySelector('#criar-tarefa').addEventListener('click', addTask);
+document.querySelector('#add-task-button').addEventListener('click', addTask);
 
 function clearAll() {
   const element = document.querySelectorAll('li');
