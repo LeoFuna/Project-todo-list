@@ -1,19 +1,3 @@
-function changeBgcOfTask(element) {
-  if (document.querySelectorAll('li').length > 1) {
-    for (let index = 0; index < document.querySelectorAll('li').length; index += 1) {
-      document.querySelectorAll('li')[index].style.backgroundColor = 'white';
-      document.querySelectorAll('li')[index].id = '';
-    }
-    const taskSelected = element.target;
-    taskSelected.id = 'selected-task';
-    taskSelected.style.backgroundColor = 'rgb(128,128,128)';
-  } else {
-    const taskSelected = element.target;
-    taskSelected.id = 'selected-task';
-    taskSelected.style.backgroundColor = 'rgb(128,128,128)';
-  }
-}
-
 function checkOnCompleted(event) {
   const completedTask = event.target;
   if (completedTask.className === 'completed') {
@@ -30,8 +14,7 @@ function addTask() {
   taskList.appendChild(element);
   document.querySelector('#text-task').value = '';
   for (let index = 0; index < document.querySelectorAll('li').length; index += 1) {
-    document.querySelectorAll('li')[index].addEventListener('click', changeBgcOfTask);
-    document.querySelectorAll('li')[index].addEventListener('dblclick', checkOnCompleted);
+    document.querySelectorAll('li')[index].addEventListener('click', checkOnCompleted);
   }
 }
 document.querySelector('#add-task-button').addEventListener('click', addTask);
