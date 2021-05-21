@@ -9,6 +9,9 @@ function checkOnCompleted(event) {
 
 const taskList = document.querySelector('#lista-tarefas');
 function addTask() {
+  if(document.querySelector('#text-task').value === '') {
+    return alert('You can\'t add a empty task');
+  }
   const element = document.createElement('li');
   element.innerText = document.querySelector('#text-task').value;
   taskList.appendChild(element);
