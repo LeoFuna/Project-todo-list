@@ -17,7 +17,7 @@ function addTask() {
   taskList.appendChild(element);
   document.querySelector('#text-task').value = '';
   for (let index = 0; index < document.querySelectorAll('li').length; index += 1) {
-    document.querySelectorAll('li')[index].addEventListener('click', checkOnCompleted);
+    document.querySelectorAll('li')[index].addEventListener('mousedown', checkOnCompleted);
   }
 }
 document.querySelector('#add-task-button').addEventListener('click', addTask);
