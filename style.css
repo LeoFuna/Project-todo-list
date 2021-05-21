@@ -1,5 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(2, 107, 2);
+  color: white;
+  padding: 10px 0;
+}
+
+header i {
+  font-size: 1.5em;
+  margin: auto 15px;
+}
+
+#task-input {
+  padding: 15px;
+  text-align: center;
+}
+
+#text-task {
+  height: 10vw;
+}
+
+#add-task-button {
+  height: 10vw;
+  padding: 0 4vw;
+  font-weight: 900;
+  background-color: rgb(2, 107, 2);
+  color: white;
+}
+
 #lista-tarefas li {
-  background-color: white;
+  background-color: rgb(230, 230, 230);
+  margin: 8px 40px;
 }
 
 .completed {
@@ -9,3 +50,77 @@
 .not-completed {
   text-decoration: none;
 }
+
+section {
+  margin: 0 2.5vw;
+}
+
+#funcionamento {
+  margin: 0 4vw;
+}
+
+#buttons-clear {
+  text-align: center;
+  margin: 15px 0;
+}
+
+#apaga-tudo, #remover-finalizados {
+  margin: 0 7px;
+  height: 10vw;
+  padding: 0 4vw;
+  font-weight: 900;
+  background-color: rgb(2, 107, 2);
+  color: white;
+}
+
+#apaga-tudo {
+  background-color: red;
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    font-size: 1.7em;
+  }
+
+  header i {
+    font-size: 2em;
+    margin: auto 30px;
+  }
+  
+  section {
+    margin: 0 vw;
+  }
+
+  #task-input, #funcionamento, #lista-tarefas, #buttons-clear {
+    margin: 0 10vw;
+  }
+
+  #funcionamento {
+    font-size: 1.8em;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  #text-task {
+    height: 5vw;
+    width: 35vw;
+    font-size: 1.5em;
+  }
+
+  #add-task-button {
+    height: 5vw;
+    font-size: 1.5em;
+  }
+
+  #apaga-tudo, #remover-finalizados {
+    margin: 0 15px;
+    height: 4vw;
+    font-size: 1em;
+  }
+
+  #lista-tarefas li {
+    margin: 12px 20vw;
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+}  
