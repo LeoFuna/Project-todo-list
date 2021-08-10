@@ -1,4 +1,4 @@
-# Boas vindas ao repositório do projeto Lista de Tarefas!
+# Boas vindas ao repositório do projeto Todo-List!
 
 Olá seja bem vindo(a) ao meu primeiro todo-list, esse projeto foi desenvolvido durante o curso da Trybe no módulo de Front-end.
 
